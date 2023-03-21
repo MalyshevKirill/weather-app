@@ -1,3 +1,10 @@
+*Project suspended*
+
+# TODO
+
+1. Add other icons
+2. Add an image to the background of the current weather block
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

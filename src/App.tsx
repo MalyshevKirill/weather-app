@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.min.css';
+import AppHeader from './components/AppHeader';
+import {useRoutes} from 'react-router-dom';
+import routesConfig from './router/routesConfig';
+import {FC} from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: FC = () => {
+    const routes = useRoutes(routesConfig)
+
+    return <>
+        <AppHeader/>
+        {routes}
+    </>
 }
 
 export default App;
